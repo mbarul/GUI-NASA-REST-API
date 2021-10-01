@@ -4,7 +4,30 @@ address_url = 'https://api.nasa.gov/planetary/apod?api_key=y5OyvRNFG94IQDiaxZujs
 
 
 class AstronomyPicture:
+    """
+    A class to get data from NASA API.
+    Astronomy picture of day
+
+    Attributes
+    ----------
+    url : str
+        url address of REST API
+
+    Methods
+    ----------
+    .
+    """
+
     def __init__(self, url):
+        """
+        Constructs all the necessary attributes for the Astronomy Picture object.
+
+        Parameters
+        ----------
+            url : str
+                url address of REST API
+
+        """
         self.data = requests.get(url).json()
         self.picture = self.data['url']
         self.date = self.data['date']
@@ -14,5 +37,5 @@ class AstronomyPicture:
 
 cosmos = AstronomyPicture(address_url)
 
-print(cosmos.picture)
-print(cosmos.title)
+
+print(cosmos.data)

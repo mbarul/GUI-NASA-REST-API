@@ -1,7 +1,7 @@
 import requests
 
 address_url = 'https://api.nasa.gov/planetary/apod?api_key=y5OyvRNFG94IQDiaxZujsubAK7AGihFMctb3WJGp'
-
+title = 'Astronomy Picture of Day'
 
 class AstronomyPicture:
     """
@@ -36,6 +36,3 @@ class AstronomyPicture:
 
 
 cosmos = AstronomyPicture(address_url)
-
-
-print(cosmos.data)

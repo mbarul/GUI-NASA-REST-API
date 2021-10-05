@@ -1,7 +1,10 @@
 import requests
+from io import BytesIO
+from PIL import Image
 
 address_url = 'https://api.nasa.gov/planetary/apod?api_key=y5OyvRNFG94IQDiaxZujsubAK7AGihFMctb3WJGp'
 title = 'Astronomy Picture of Day'
+
 
 class AstronomyPicture:
     """
@@ -29,10 +32,11 @@ class AstronomyPicture:
 
         """
         self.data = requests.get(url).json()
-        self.picture = self.data['url']
+        self.picture = requests.get(self.data['url'])
         self.date = self.data['date']
         self.explanation = self.data['explanation']
         self.title = self.data['title']
 
 
 cosmos = AstronomyPicture(address_url)
+print(cosmos.data)

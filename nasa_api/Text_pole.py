@@ -27,9 +27,12 @@ class Field(ttk.Frame):
 
     def __init__(self, text, grid_row, grid_col, span=1, size=10):
         super().__init__()
-        self.my_label = tk.Label(text=text, font=('Helvetica', size), relief='groove', wraplength=500).grid(
+        self.my_label = tk.Label(text=text, font=('Helvetica', size), relief='groove', wraplength=400).grid(
             row=grid_row,
             column=grid_col,
             columnspan=span,
             padx=5,
             pady=5)
+
+
+

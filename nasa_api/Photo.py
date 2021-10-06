@@ -18,4 +18,4 @@ class Picture(tk.Frame):
         self.img = Image.open(BytesIO(cosmos.picture.content))
         self.img = self.img.resize((500, 350))
         self.tkimage = ImageTk.PhotoImage(self.img)
-        tk.Label(image=self.tkimage).grid(row=5, column=1, columnspan=4, padx=5, pady=5)
+        tk.Label(image=self.tkimage).grid(row=5, column=2, columnspan=4, rowspan=20, padx=5, pady=5)

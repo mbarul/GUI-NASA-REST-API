@@ -53,3 +53,10 @@ class ExitButton(tk.Frame):
         super(ExitButton, self).__init__()
         self.btn = ttk.Button(text=text, command=parent.destroy).grid(row=grid_row, column=grid_col, padx=5, pady=5,
                                                                       ipadx=5, ipady=5)
+
+
+class DateButton(tk.Frame):
+    def __init__(self, text, grab, grid_r, grid_c):
+        super(DateButton, self).__init__()
+        self.btn = tk.Button(text=text, command=grab)
+        self.btn.grid(row=grid_r, column=grid_c)

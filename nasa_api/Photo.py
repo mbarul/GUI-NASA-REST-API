@@ -13,9 +13,14 @@ class Picture(tk.Frame):
         Astronomy picture of day
     """
 
-    def __init__(self):
-        super(Picture, self).__init__()
+    def __init__(self, h, w):
+        super().__init__()
         self.img = Image.open(BytesIO(cosmos.picture.content))
-        self.img = self.img.resize((500, 350))
-        self.tkimage = ImageTk.PhotoImage(self.img)
-        tk.Label(image=self.tkimage).grid(row=5, column=2, columnspan=4, rowspan=20, padx=5, pady=5)
+        self.img = self.img.resize((h, w))
+        self.tk_image = ImageTk.PhotoImage(self.img)
+        tk.Label(image=self.tk_image).pack()
+
+
+class FullPhoto(Picture):
+    def __init__(self, h, w):
+        super().__init__(h, w)

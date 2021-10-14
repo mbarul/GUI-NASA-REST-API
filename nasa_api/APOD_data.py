@@ -3,10 +3,10 @@ import requests
 
 
 #
-x=20
+
 queryUrl = 'https://api.nasa.gov/planetary/apod?'
 queryKey = 'api_key=y5OyvRNFG94IQDiaxZujsubAK7AGihFMctb3WJGp'
-queryDate = f'&date=20{x}-05-28&'
+queryDate = f'&date=2020-07-28&'
 
 queryFull = queryUrl + queryKey + queryDate
 

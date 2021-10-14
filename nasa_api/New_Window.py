@@ -4,6 +4,17 @@ from Photo import Picture,FullPhoto
 
 
 class FullPhotoWindow(tk.Frame):
+    """
+        A class where with REST API we can describe our picture in new window
+
+        Attributes
+        ----------
+        .
+        Methods
+        ----------
+        .
+
+    """
     def __init__(self):
         super().__init__()
         self.top = tk.Toplevel()

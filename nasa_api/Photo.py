@@ -18,9 +18,13 @@ class Picture(tk.Frame):
         self.img = Image.open(BytesIO(cosmos.picture.content))
         self.img = self.img.resize((h, w))
         self.tk_image = ImageTk.PhotoImage(self.img)
-        tk.Label(image=self.tk_image).pack()
+        tk.Label(image=self.tk_image).pack(pady=(10, 150))
 
 
 class FullPhoto(Picture):
+    """
+    Inheritance class - Picture
+    """
+
     def __init__(self, h, w):
         super().__init__(h, w)

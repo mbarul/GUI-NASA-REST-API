@@ -20,10 +20,9 @@ class AppButton(tk.Frame):
     .
     """
 
-    def __init__(self, text):
+    def __init__(self, text, x, y):
         super().__init__()
-        self.btn = ttk.Button(text=text).pack(
-            ipadx=5, ipady=5)
+        self.btn = ttk.Button(text=text).place(relx=1, x=x, y=y, anchor='ne')
 
         # configure style
         self.style = ttk.Style(self)
@@ -46,15 +45,14 @@ class ExitButton(tk.Frame):
 
     def __init__(self, text, parent):
         super().__init__()
-        self.btn = ttk.Button(text=text, command=parent.destroy).pack(
-            ipadx=5, ipady=5)
+        self.btn = ttk.Button(text=text, command=parent.destroy).place(relx=1, x=-128, y=85, anchor='ne')
 
 
 class DateButton(tk.Frame):
     def __init__(self, text, grab):
         super(DateButton, self).__init__()
         self.btn = tk.Button(text=text, command=grab)
-        self.btn.pack(pady=(0, 40))
+        self.btn.place(x=152, y=275)
 
 
 class OpenButton(tk.Frame):
@@ -74,11 +72,13 @@ class OpenButton(tk.Frame):
 
     def __init__(self, text):
         super().__init__()
-        self.btn = ttk.Button(text=text, command=self.open).pack(
-            ipadx=5, ipady=5)
+        self.btn = ttk.Button(text=text, command=self.open).place(relx=1, x=-240, y=50, anchor='ne')
         # configure style
         self.style = ttk.Style(self)
         self.style.configure('TButton', bg='yellow', font=('Helvetica', 10))
 
-    def open(self):
+    @staticmethod
+    def open():
         FullPhotoWindow()
+
+

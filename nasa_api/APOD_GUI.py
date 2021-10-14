@@ -19,10 +19,10 @@ class MainApplication(tk.Frame):
         self.field = Field(cosmos.title)
         self.field2 = Field(cosmos.explanation)
         self.full_btn = OpenButton("Full Photo")
-        self.save_btn = AppButton("Save Photo")
-        self.submit_btn = AppButton("Submit")
+        self.save_btn = AppButton("Save Photo", -128, 50)
+        self.submit_btn = AppButton("Submit", -20, 50)
         self.exit_btn = ExitButton("Exit", parent)
-        self.pict = Picture(200, 150)
+        self.pict = Picture(500, 350)
         self.calendar = Calendar()
 
 

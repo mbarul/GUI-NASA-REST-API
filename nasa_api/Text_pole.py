@@ -11,12 +11,6 @@ class Field(ttk.Frame):
         ----------
         text : str
             text inside in label
-        grid_row : int
-            position Y of label in main frame
-        grid_col : int
-            position X of label in main frame
-        span : int
-            how large can me label (X)
         size : int
             size of font in label
 
@@ -27,4 +21,4 @@ class Field(ttk.Frame):
 
     def __init__(self, text, size=10):
         super().__init__()
-        self.my_label = tk.Label(text=text, font=('Helvetica', size), relief='groove', wraplength=1000).pack(pady=10)
+        self.my_label = tk.Label(text=text, font=('Helvetica', size), relief='groove', wraplength=600).pack(pady=10)

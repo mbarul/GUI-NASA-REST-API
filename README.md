@@ -52,7 +52,7 @@ The **NASA** API is a RESTful web service to obtain movie information. By defaul
 ### Libraries used:
 
 - **tkinter** - *to design the GUI*
-- - **tkcalendar** - *to design calendar in the GUI*
+- **tkcalendar** - *to design calendar in the GUI*
 - **pillow (PIL)** - *to make images compatible with tk GUI*
 - **io** - *to encode and use images from URL*
 - **requests** - *to request and read data from the API response*

@@ -43,7 +43,10 @@
 
 ### API used:
 
-![NASA API](https://miro.medium.com/max/452/1*0tPTi7jNKZbV05A2m0i3Bg.png)
+
+<p align="center"> 
+<img src="https://miro.medium.com/max/452/1*0tPTi7jNKZbV05A2m0i3Bg.png" width="400">
+</p>
 
 The **NASA** API is a RESTful web service to obtain movie information. By default all NASA API responses are formatted as JSON.
 

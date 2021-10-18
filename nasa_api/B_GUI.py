@@ -5,7 +5,6 @@ import tkinter.ttk as ttk
 #
 from New_Window import FullPhotoWindow
 
-
 class AppButton(tk.Frame):
     """
     A class with we can create buttons and by click manipulate at App.

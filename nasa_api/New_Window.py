@@ -1,6 +1,7 @@
 # import libs
 import tkinter as tk
-from Photo import Picture,FullPhoto
+
+from Photo import FullPhoto
 
 
 class FullPhotoWindow(tk.Frame):

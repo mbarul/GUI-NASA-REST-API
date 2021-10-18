@@ -1,8 +1,4 @@
 import requests
-#from dsa import *
-
-
-#
 
 queryUrl = 'https://api.nasa.gov/planetary/apod?'
 queryKey = 'api_key=y5OyvRNFG94IQDiaxZujsubAK7AGihFMctb3WJGp'

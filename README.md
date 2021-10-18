@@ -7,19 +7,19 @@
 
 <div align="center">
   <!-- Contributors -->
-  <a href="https://github.com/somrajchowdhury/Python_GUI_tkinter/graphs/contributors">
+  <a href="">
     <img src="https://img.shields.io/badge/contributor(s)-1-red.svg"
       alt="API stability" />
   </a>
 
   <!-- Python Version -->
-  <a href="https://github.com/somrajchowdhury/PythonCodes/">
+  <a href="">
     <img src="https://img.shields.io/badge/Python-3.x-blue.svg"
       alt="API stability" />
   </a>
   
   <!-- Number of Codes -->
-  <a href="https://github.com/somrajchowdhury/PythonCodes/">
+  <a href="">
     <img src="https://img.shields.io/badge/1-codes-brightgreen.svg"
       alt="API stability" />
   </a>

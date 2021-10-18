@@ -39,11 +39,15 @@
 
 *NASA - Picture of day* application uses an API to extract Astronomy Picture of the Day data using URL requests and displays the relevant retrieved data from the API on to the GUI.
 
+---
+
 ### API used:
 
 ![NASA API](https://miro.medium.com/max/452/1*0tPTi7jNKZbV05A2m0i3Bg.png)
 
 The **NASA** API is a RESTful web service to obtain movie information. By default all NASA API responses are formatted as JSON.
+
+---
 
 ### Libraries used:
 
@@ -54,33 +58,24 @@ The **NASA** API is a RESTful web service to obtain movie information. By defaul
 - **urllib** - *to request and read data from the API response*
 - **json** - *to load and retrieve required fields from the API response*
 
+---
+
 ### Screenshots :camera: :
 
-The first window that shows up is where you enter the name of the movie whose info you want to display on the GUI.
 
-![enter movie name.png](https://i.imgur.com/VV3UFUL.png)
+<p align="center"> 
+<img src="https://github.com/mbarul/GUI-NASA-REST-API/blob/main/img/picture%20and%20text.PNG" width="400">
+</p>
+<p align="center"> 
+<img src="https://github.com/mbarul/GUI-NASA-REST-API/blob/main/img/calendar.PNG" width="400">
+</p>
+<p align="center"> 
+<img src="https://github.com/mbarul/GUI-NASA-REST-API/blob/main/img/full%20photo.PNG" width="400">
+</p>
+<p align="center"> 
+<img src="https://github.com/mbarul/GUI-NASA-REST-API/blob/main/img/buttons.PNG" width="400">
+</p>
 
-Suppose I enter **avatar** in the entry field,
-
-![enter avatar](https://i.imgur.com/X9tKG55.png)
-
-If the movie is found, the response is sent and the GUI looks like this,
-
-![avatar](https://i.imgur.com/xoRt4u4.png)
-
-If the entered movie is not found, it is notified in the GUI using a *validation message*,
-
-![not found](https://i.imgur.com/ZzvzpUW.png)
-
-Also, at times there might be some issues connecting to the API service, in that case you get a *message* to resumbit, where you just need to click the `SUBMIT` button again
-
-![resubmit](https://i.imgur.com/8feFmAK.png)
-
-*Some more screenshots*
-
-| ![harry potter](https://i.imgur.com/5gggJ2Y.png) | ![stranger things](https://i.imgur.com/OLSyySN.png) |
-|:--:|:--:|
-| ![uri](https://i.imgur.com/AUSQp2X.png) | ![3 idiots](https://i.imgur.com/L2n0ZbD.png) |
 
 
 ---
